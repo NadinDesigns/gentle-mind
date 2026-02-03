@@ -1,5 +1,3 @@
-Hier ist eine prägnante, professionelle Version für deine README.md auf Deutsch:
-
 🧘 Emotion Practice App (Beta)
 Eine minimalistische Web-App zur mentalen Selbsthilfe, die passende Übungen basierend auf dem aktuellen emotionalen Zustand vorschlägt.
 
@@ -36,4 +34,4 @@ Entwicklungsmodus: npm run dev
 Produktions-Build: npm run build
 
 🔗 Live Demo
-[Hier Link zur Vercel-App einfügen]
+[  ]
