@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+Hier ist eine prägnante, professionelle Version für deine README.md auf Deutsch:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧘 Emotion Practice App (Beta)
+Eine minimalistische Web-App zur mentalen Selbsthilfe, die passende Übungen basierend auf dem aktuellen emotionalen Zustand vorschlägt.
 
-Currently, two official plugins are available:
+🚀 Funktionen
+Emotions-Check: Dynamische Auswahl des aktuellen Befindens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Randomisierte Übungen: Automatisierte Auswahl aus dem Content-Pool.
 
-## React Compiler
+Interaktiver Timer: Visueller Fortschrittsbalken mit Audio-Bestätigung.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive: Optimiert für Mobile und Desktop.
 
-## Expanding the ESLint configuration
+🛠 Tech-Stack
+Frontend: React 18 + TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Styling: Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Tooling: Vite (für schnelles Development)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Deployment: Vercel
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚙️ Technische Highlights
+Performance-Optimierung: Einsatz von useCallback und React.memo, um unnötige Re-renders (verursacht durch Hintergrundanimationen) zu verhindern.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Memory Management: Sicherer Umgang mit Intervallen via useRef und sauberes Cleanup im useEffect.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+State-Machine: Strukturierte Navigation zwischen den App-Zuständen (Welcome -> Intro -> Practice -> Success).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📦 Installation & Start
+Abhängigkeiten installieren: npm install
+
+Entwicklungsmodus: npm run dev
+
+Produktions-Build: npm run build
+
+🔗 Live Demo
+[Hier Link zur Vercel-App einfügen]
