@@ -27,7 +27,7 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({
           onClick={onStart}
           className="w-full py-5 rounded-full text-xl font-semibold tracking-wide bg-gradient-to-r from-sky-100 to-pink-100 text-slate-700 shadow-[0_8px_30px_-10px_rgba(167,232,255,0.4)] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 active:scale-95"
         >
-          Начать
+          Start
         </button>
       </div>
     </div>

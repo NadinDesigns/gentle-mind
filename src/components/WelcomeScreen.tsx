@@ -19,7 +19,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = memo(
       <div className="flex flex-col h-full items-center p-6 pt-32 md:pt-40 max-w-md mx-auto w-full">
         <header className="mb-10 text-center animate-fade-in-up">
           <h1 className="text-2xl sm:text-3xl font-bold text-slate-700 mb-2 tracking-tight leading-tight">
-            Как ты сейчас?
+            Wie geht es dir gerade?
           </h1>
           <div className="h-1.5 w-16 bg-gradient-to-r from-sky-100 to-pink-100 rounded-full mx-auto mt-6 opacity-60"></div>
         </header>

@@ -13,10 +13,10 @@ export type ContentMap = Record<Emotion, PracticeData[]>;
 
 // 🟢 НОВОЕ: Отдельный объект для меток кнопок, используемых в WelcomeScreen
 export const emotionLabels: Record<Emotion, string> = {
-  NO_ENERGY: "Нет сил",
-  UNFOCUS: "Не могу сосредоточиться",
-  OVERWHELMED: "Перегружена",
-  ANXIETY: "Тревога",
+  NO_ENERGY: "Ich bin erschöpft",
+  UNFOCUS: "Kann mich nicht konzentrieren",
+  OVERWHELMED: "Ich bin überfordert",
+  ANXIETY: "Ich bin unruhig",
 };
 
 // 3. Обновление объекта content (остается без изменений, так как он содержит массив практик)
@@ -24,75 +24,86 @@ export const content: ContentMap = {
   // --- NO_ENERGY (Нет сил) ---
   NO_ENERGY: [
     {
-      title: "Тёплая ладонь",
+      title: "Deine warme Hand",
       introText:
-        "Ты устала. Твоё тело замедлилось. Давай поможем ему проснуться хотя бы на 1%.",
+        "Du bist erschöpft. Dein Körper ist gerade ganz langsam. Lass uns ihm helfen, wieder ein kleines bisschen wach zu werden – nur 1 %.",
       practiceText:
-        "Положи ладонь на грудь.\nСделай мягкий вдох… и такой же мягкий выдох.\nНе нужно стараться. Просто дыши рядом с ладонью.",
-      completionText: "Ты проснулась на 1%. Этого достаточно.",
+        "Lege deine Hand sanft auf deine Brust.\nAtme ganz weich ein… und genauso sanft wieder aus.\nDu musst dich nicht anstrengen. Spüre einfach nur den Kontakt zu deiner Hand.",
+      completionText:
+        "Du bist wieder ein Stückchen mehr bei dir. Das reicht völlig aus.",
     },
     {
-      title: "Мягкая активация",
+      title: "Sanfte Aktivierung",
       introText:
-        "Твоё тело будто выключено. Давай дадим ему немного энергии — совсем чуть-чуть.",
+        "Dein Körper fühlt sich gerade etwas abgeschaltet an. Lass uns ihm ein kleines bisschen Energie schenken – nur ein ganz kleines bisschen.",
       practiceText:
-        "Положи ладони на бёдра.\nСлегка надави вниз, удержи 3 секунды… отпусти.\nПовтори три раза.\nЭто простое движение возвращает контакт с телом.",
-      completionText: "Энергия вернулась. Маленький шаг — тоже шаг.",
+        "Lege deine Hände auf deine Oberschenkel.\nDrücke sanft für 3 Sekunden nach unten… und lass wieder los.\nWiederhole das dreimal.\nDiese einfache Bewegung hilft dir, dich wieder ganz zu spüren.",
+      completionText:
+        "Die Energie kehrt langsam zurück. Jeder noch so kleine Schritt zählt.",
     },
   ],
 
   // --- UNFOCUS (Рассеянность) ---
   UNFOCUS: [
     {
-      title: "Опора",
-      introText: "Ты будто рассыпалась. Давай соберём тебя в одну точку.",
+      title: "Ankerpunkt",
+      introText:
+        "Du wirkst gerade etwas zerstreut. Lass uns versuchen, dich wieder ganz zu sammeln.",
       practiceText:
-        "Положи ладони на стол.\nНадави 3 секунды… отпусти.\nСнова надави… и отпусти.\nКогда есть опора, внимание собирается быстрее.",
-      completionText: "Ты собралась. Твоё внимание снова с тобой.",
+        "Lege deine Hände flach auf den Tisch.\nDrücke für 3 Sekunden fest auf… und lass wieder los.\nDrücke noch einmal… und lass los.\nWenn du einen festen Halt spürst, kommt deine Aufmerksamkeit schneller zurück.",
+      completionText:
+        "Du bist wieder ganz bei dir. Deine Konzentration ist zurück.",
     },
     {
-      title: "Три выдоха",
-      introText: "Твоё внимание разбежалось. Соберём его через дыхание.",
+      title: "Drei Atemzüge",
+      introText:
+        "Deine Gedanken sind gerade etwas sprunghaft. Lass uns den Fokus über den Atem zurückholen.",
       practiceText:
-        "Сделай три медленных выдоха.\nПозволь выдоху быть длиннее вдоха.\nДлинный выдох успокаивает мозг и возвращает фокус.",
-      completionText: "Ты снова в точке. Внимание рядом.",
+        "Mache drei langsame Ausatmungen.\nLass den Atem ganz von selbst fließen, mach den Ausatemzug ruhig etwas länger als den Einatemzug.\nDas lange Ausatmen beruhigt deinen Geist und bringt dich wieder in den Fokus.",
+      completionText: "Du bist wieder ganz da. Dein Fokus ist bei dir.",
     },
   ],
 
   // --- OVERWHELMED (Перегруженность) ---
   OVERWHELMED: [
     {
-      title: "Плечи-потолок",
-      introText: "Ты несёшь слишком много. Давай снимем часть этого веса.",
+      title: "Schultern hoch & loslassen",
+      introText:
+        "Du trägst gerade zu viel mit dir herum. Lass uns einen Teil dieser Last ablegen.",
       practiceText:
-        "Подними плечи к ушам.\nЗамри на 2 секунды…\nИ отпусти вниз.\nПочувствуй, как напряжение уходит.",
+        "Ziehe deine Schultern hoch zu den Ohren.\nHalte die Spannung für 2 Sekunden… und lass sie dann bewusst nach unten sinken.\nSpüre, wie die Anspannung von dir abfällt.",
       completionText:
-        "Стало легче. Ты сняла часть напряжения — и этого уже достаточно.",
+        "Es fühlt sich leichter an, oder? Du hast etwas Last losgelassen – das ist schon ein großer Schritt.",
     },
     {
-      title: "Стряхивание",
-      introText: "Тело сжалось от нагрузки. Освободим немного места внутри.",
+      title: "Einfach abschütteln",
+      introText:
+        "Dein Körper fühlt sich unter Last angespannt an. Lass uns ein bisschen Platz in dir schaffen.",
       practiceText:
-        "Расслабь кисти и слегка встряхни ими 5 секунд.\nКак будто сбрасываешь лишнее — вниз, в пол.\nЭто помогает телу отпустить то, что оно держит.",
-      completionText: "Тебе стало чуть свободнее. Ты дышишь легче.",
+        "Lockere deine Handgelenke und schüttle sie für 5 Sekunden sanft aus.\nStell dir vor, wie du alles Überflüssige nach unten in den Boden abgibst.\nDas hilft deinem Körper, das loszulassen, was er gerade festhält.",
+      completionText:
+        "Du fühlst dich jetzt etwas freier. Dein Atem fließt wieder leichter.",
     },
   ],
 
   // --- ANXIETY (Тревога) ---
   ANXIETY: [
     {
-      title: "Один объект",
-      introText: "Стой. Ты здесь. Ты в безопасности.",
+      title: "Ein fester Punkt",
+      introText: "Stopp. Du bist hier. Du bist sicher.",
       practiceText:
-        "Найди один предмет вокруг.\nСмотри на него 5 секунд: цвет, форму, линии.\nПозволь взгляду зацепиться за что-то стабильное.",
-      completionText: "Ты вернулась в момент. Ты в безопасности.",
+        "Suche dir einen Gegenstand in deiner Nähe.\nBetrachte ihn für 5 Sekunden: seine Farbe, seine Form, seine Linien.\nLass deinen Blick an etwas Stabilem haften bleiben.",
+      completionText:
+        "Du bist wieder im Hier und Jetzt. Du bist in Sicherheit.",
     },
     {
-      title: "Контакт с землёй",
-      introText: "Тревога поднялась. Вернём тело — и опора вернётся тоже.",
+      title: "Kontakt zum Boden",
+      introText:
+        "Die Angst kommt hoch. Lass uns deinen Körper wieder erden – so findest du deinen Halt.",
       practiceText:
-        "Поставь стопы ровно на пол.\nНадави пятками 3 секунды… отпусти.\nПовтори несколько раз.\nЗемля держит тебя сильнее, чем тревога.",
-      completionText: "Ты снова в теле. Опора под тобой есть.",
+        "Stelle deine Füße flach auf den Boden.\nDrücke für 3 Sekunden mit den Fersen fest auf… und lass wieder los.\nWiederhole das ein paar Mal.\nSpüre: Die Erde unter dir hält dich fester als jede Angst.",
+      completionText:
+        "Du bist wieder in deinem Körper angekommen. Du hast festen Boden unter den Füßen.",
     },
   ],
 };

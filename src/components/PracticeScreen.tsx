@@ -135,7 +135,7 @@ export const PracticeScreen: React.FC<PracticeScreenProps> = ({
                 onClick={handleStartTimer}
                 className="w-20 h-20 rounded-full bg-sky-100/80 hover:bg-sky-200/80 text-sky-700 font-bold text-lg shadow-sm border border-sky-200/50 flex items-center justify-center transition-all transform hover:scale-105 active:scale-95"
               >
-                Старт
+                Start
               </button>
             ) : (
               <span className="text-4xl font-light tabular-nums text-slate-600">

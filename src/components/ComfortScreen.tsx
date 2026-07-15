@@ -47,7 +47,7 @@ export const ComfortScreen: React.FC<ComfortScreenProps> = ({
             onClick={onClose}
             className="w-full py-4 rounded-[2rem] text-lg font-semibold bg-white/80 border border-white/60 text-slate-500 hover:text-slate-700 hover:bg-white transition-all shadow-sm hover:shadow-md"
           >
-            Закрыть
+            Schlißen
           </button>
         </div>
       </div>
